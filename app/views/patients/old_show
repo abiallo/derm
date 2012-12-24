@@ -1,0 +1,19 @@
+<%= render @patient %>
+<h2> Patient Profile </h2> </p>
+<div id='edit_patient_profile_title'>
+</div>	
+<%= link_to "Open Patient Profile form", edit_patient_patient_profile_path(@patient, :format => :js),
+         :remote => true,  :id => 'edit_patient_profile_link' %>
+
+<h3>Previous Dhermatologic Visits:</h3>
+<div id="dhermatologic_visits">
+	<%= render @patient.dhermatologic_visits %>
+	</p>
+</div>
+</p>
+
+<h2> New Dhermatologic Visit </h2> </p>
+<div id='new_dhermatologic_visit_title'>
+</div>	
+<%= link_to "Open Dhermatologic Visit form", new_patient_dhermatologic_visit_path(@patient, :format => :js),
+         :remote => true,  :id => 'new_dhermatologic_visit_link' %>

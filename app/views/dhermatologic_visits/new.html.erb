@@ -1,0 +1,42 @@
+<%= form_for([@patient, @patient.dhermatologic_visits.new],
+          :html => {:style => 'display: none;'}) do |f| %>
+          
+
+  <div class="field">
+    <%= f.label :visit_date %><br />
+    <%= f.date_select :visit_date %>
+  </div>
+  <div class="field">
+    <%= f.label :chief_complaint %><br />
+    <%= f.text_area :chief_complaint %>
+  </div>
+  <div class="field">
+    <%= f.label :history_illness %><br />
+    <%= f.text_area :history_illness %>
+  </div>
+  <div class="field">
+    <%= f.label :ex_general %><br />
+    <%= f.text_field :ex_general %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :diagnosis %><br />
+    <%= f.text_area :diagnosis %>
+  </div>
+  <div class="field">
+    <%= f.label :medication %><br />
+    <%= f.text_area :medication %>
+  </div>
+  <div class="field">
+    <%= f.label :procedures %><br />
+    <%= f.text_area :procedures %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Add' %><br />
+  </div>
+
+<% end %>
+

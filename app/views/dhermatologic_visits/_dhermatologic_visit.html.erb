@@ -1,0 +1,9 @@
+<%= div_for dhermatologic_visit do %>
+  <h3>
+    <%= 'Date: '+ dhermatologic_visit.visit_date.to_s() %> 
+    <span class='actions'>
+      <%= link_to 'Delete', [@patient, dhermatologic_visit], :confirm => 'Are you sure?', :method => :delete %>
+    </span>
+  </h3>
+  <%= 'Chief Complaint: '+ dhermatologic_visit.chief_complaint %>
+<% end %>

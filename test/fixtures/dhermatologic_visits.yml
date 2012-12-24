@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  visit_date: 2012-12-09
+  chief_complaint: MyText
+  history_illness: MyText
+  ex_general: MyString
+  weight: 9.99
+  diagnosis: MyText
+  medication: MyText
+  procedures: MyText
+
+two:
+  patient_id: 1
+  visit_date: 2012-12-09
+  chief_complaint: MyText
+  history_illness: MyText
+  ex_general: MyString
+  weight: 9.99
+  diagnosis: MyText
+  medication: MyText
+  procedures: MyText

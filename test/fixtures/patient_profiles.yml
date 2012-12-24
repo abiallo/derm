@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  h_none: false
+  h_cancer: false
+  h_others: MyText
+
+two:
+  patient_id: 1
+  h_none: false
+  h_cancer: false
+  h_others: MyText

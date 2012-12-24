@@ -1,0 +1,49 @@
+<%= form_for(@dhermatologic_visit) do |f| %>
+  <% if @dhermatologic_visit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dhermatologic_visit.errors.count, "error") %> prohibited this dhermatologic_visit from being saved:</h2>
+
+      <ul>
+      <% @dhermatologic_visit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :visit_date %><br />
+    <%= f.date_select :visit_date %>
+  </div>
+  <div class="field">
+    <%= f.label :chief_complaint %><br />
+    <%= f.text_area :chief_complaint %>
+  </div>
+  <div class="field">
+    <%= f.label :history_illness %><br />
+    <%= f.text_area :history_illness %>
+  </div>
+  <div class="field">
+    <%= f.label :ex_general %><br />
+    <%= f.text_field :ex_general %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :diagnosis %><br />
+    <%= f.text_area :diagnosis %>
+  </div>
+  <div class="field">
+    <%= f.label :medication %><br />
+    <%= f.text_area :medication %>
+  </div>
+  <div class="field">
+    <%= f.label :procedures %><br />
+    <%= f.text_area :procedures %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

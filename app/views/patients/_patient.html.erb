@@ -1,0 +1,12 @@
+<%= div_for patient do %>
+  <h3>
+  	<%= 'Patient Name: '%>
+    <%= link_to patient.long_name, patient %>
+    <span class='actions'>
+      <%= link_to "Edit", edit_patient_path(patient) %>
+      <%= link_to "Delete", patient, :confirm => "Are you sure?",
+:method => :delete %>
+    </span>
+  </h3>
+  <%= 'File n. '  + patient.id.to_s()%> 
+<% end %>

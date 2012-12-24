@@ -1,0 +1,39 @@
+<h1>Listing dhermatologic_visits</h1>
+
+<table>
+  <tr>
+    <th>Patient</th>
+    <th>Visit date</th>
+    <th>Chief complaint</th>
+    <th>History illness</th>
+    <th>Ex general</th>
+    <th>Weight</th>
+    <th>Diagnosis</th>
+    <th>Medication</th>
+    <th>Procedures</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dhermatologic_visits.each do |dhermatologic_visit| %>
+  <tr>
+    <td><%= dhermatologic_visit.patient_id %></td>
+    <td><%= dhermatologic_visit.visit_date %></td>
+    <td><%= dhermatologic_visit.chief_complaint %></td>
+    <td><%= dhermatologic_visit.history_illness %></td>
+    <td><%= dhermatologic_visit.ex_general %></td>
+    <td><%= dhermatologic_visit.weight %></td>
+    <td><%= dhermatologic_visit.diagnosis %></td>
+    <td><%= dhermatologic_visit.medication %></td>
+    <td><%= dhermatologic_visit.procedures %></td>
+    <td><%= link_to 'Show', dhermatologic_visit %></td>
+    <td><%= link_to 'Edit', edit_dhermatologic_visit_path(dhermatologic_visit) %></td>
+    <td><%= link_to 'Destroy', dhermatologic_visit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dhermatologic visit', new_dhermatologic_visit_path %>
