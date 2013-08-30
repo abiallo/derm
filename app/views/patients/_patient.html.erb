@@ -8,5 +8,16 @@
 :method => :delete %>
     </span>
   </h3>
-  <%= 'File n. '  + patient.id.to_s()%> 
+  <p>
+    <b><%= 'File Number: ' %> </b>  
+      <%= @patient.id %> 
+ </p>
+  <p>  
+    <b><%= 'Date of birth: ' %> </b>  
+      <%= @patient.date_of_birth %> </p>
+    <p>
+    <b><%= 'Mobile number: ' %></b>
+    <%= @patient.mobile_number %>
+ </p><p></p>
+
 <% end %>
